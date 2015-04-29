@@ -1,12 +1,12 @@
 {
   "name": "symdiff",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Reports the symmetric difference between your classes in CSS and templates.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -r test/chai.js test/*.test.js"
   },
-  "author": "Nikolaus Piccolotto",
+  "author": "Nikolaus Piccolotto <prayerslayer@fastmail.fm>",
   "license": "MIT",
   "dependencies": {
     "lodash": "3.7.0"
