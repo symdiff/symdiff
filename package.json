@@ -1,0 +1,18 @@
+{
+  "name": "symdiff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r test/chai.js test/*.test.js"
+  },
+  "author": "Nikolaus Piccolotto",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "3.7.0"
+  },
+  "devDependencies": {
+    "chai": "2.3.0",
+    "mocha": "2.2.4"
+  }
+}
