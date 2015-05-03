@@ -4,15 +4,17 @@
   "description": "Reports the symmetric difference between your classes in CSS and templates.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r test/chai.js test/*.test.js"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
-  "author": "Nikolaus Piccolotto <prayerslayer@fastmail.fm>",
+  "author": "Nikolaus Piccolotto <hello@npiccolotto.com>",
   "license": "MIT",
   "dependencies": {
     "lodash": "3.7.0"
   },
   "devDependencies": {
     "chai": "2.3.0",
-    "mocha": "2.2.4"
+    "mocha": "2.2.4",
+    "coveralls": "2.11.2",
+    "istanbul": "0.3.13"
   }
 }
