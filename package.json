@@ -1,13 +1,21 @@
 {
   "name": "symdiff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reports the symmetric difference between your classes in CSS and templates.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/symdiff/symdiff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/symdiff/symdiff/issues"
+  },
+  "homepage": "https://symdiff.github.io",
   "scripts": {
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "author": "Nikolaus Piccolotto <hello@npiccolotto.com>",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "dependencies": {
     "lodash": "3.7.0"
   },
