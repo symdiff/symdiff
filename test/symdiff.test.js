@@ -30,6 +30,12 @@ describe('shouldIgnore()', function() {
         expect(fn('beartato')).to.equal(true);
         expect(fn('other')).to.equal(false);
     });
+
+    it('should ignore everything that is not a string or a regex', function() {
+        var ignore = [1, true, function() {}, {}, []],
+            fn = shouldIgnore(ignore);
+        expect(fn('grid')).to.equal(false);
+    });
 });
 
 describe('symdiff', function() {
