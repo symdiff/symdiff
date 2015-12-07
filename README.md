@@ -14,12 +14,12 @@ Calculates symmetric difference between two arrays of strings. Main purpose is t
 
 It outputs an object with the fields `css` and `templates`. For instance:
 
-    var css = [“grid”, “grid-col”, “grid-row”],
-        html= [“grid”                        ],
-        ignr= [        “grid-col”            ];
+    var css = ["grid", "grid-col", "grid-row"],
+        html= ["grid"                        ],
+        ignr= [        "grid-col"            ];
 
     symdiff(css, html, ignr)
-    > { css: [“grid-row”], templates: [] }
+    > { css: ["grid-row"], templates: [] }
 
 
 ## License
